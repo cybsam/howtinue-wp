@@ -1,0 +1,137 @@
+/*--------------------------------------------------------------
+# Imports
+--------------------------------------------------------------*/
+
+@import "_custom-properties.css";
+@import "_reset.css";
+@import "_typography.css";
+@import "_elements.css";
+@import "_links.css";
+@import "_grid.css";
+
+/*--------------------------------------------------------------
+# Basic
+--------------------------------------------------------------*/
+
+body,
+html {
+    direction: rtl;
+}
+
+body:not(.block-editor-page):not(.wp-core-ui),
+body:not(.block-editor-page):not(.wp-core-ui) pre {
+    unicode-bidi: embed;
+    text-align: right !important;
+}
+
+.wp-block-quote {
+    border-left: 0;
+    border-right: 4px solid #000;
+    padding-left: 0;
+    padding-right: 1em;
+}
+
+.entry-content>blockquote {
+    padding-left: 0;
+    padding-right: 1em;
+    margin-left: 0;
+    margin-right: 1.5rem;
+}
+
+.entry-content>.wp-block-quote,
+.entry-content>.wp-block-quote.is-style-large {
+    margin-left: 0;
+    margin-right: 1.5rem;
+}
+
+@media screen and (min-width: 48em) {
+    .entry-content>.wp-block-quote,
+    .entry-content>.wp-block-quote.is-style-large {
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+.menu-icons-wrapper {
+    float: left;
+    margin: 0 10px 0 0px;
+}
+
+.menu-icons-wrapper .cart,
+.menu-icons-wrapper .search {
+    float: right;
+}
+
+.menu-icons-wrapper div:last-child {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.menu-icons-wrapper #searchform:before {
+    left: 15px;
+    right: auto;
+}
+
+.menu-icons-wrapper #searchform input[type=submit] {
+    left: 0;
+    right: auto;
+}
+
+body .main-navigation a,
+body .main-navigation ul li a,
+body .nav--toggle-sub li.menu-item-has-children,
+body .nav--toggle-small .menu-toggle,
+body .site-sub-header .entry-header .entry-title,
+body .site-sub-header .page-header .page-title,
+body .site-sub-header .entry-header,
+body .site-sub-header .page-header,
+body .site-sub-header .entry-title,
+body .site-sub-header .page-title {
+    text-align: right;
+}
+
+select.orderby,
+select#pa_color,
+select#pa_size {
+    background-position: left 1rem center !important;
+    padding-left: 40px !important;
+    padding-right: 12px !important;
+}
+
+.menu-icons-wrapper {
+    float: right;
+}
+
+.entry-meta.entry-meta .posted-by img {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.entry-meta .author.vcard {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.post-thumbnail+.post-categories {
+    right: 10px;
+    left: auto;
+}
+
+@media (min-width: 768px) {
+    .nav--toggle-sub li.menu-item--has-toggle,
+    .nav--toggle-sub li.menu-item-has-children {
+        padding-left: .7em;
+        padding-right: 0;
+    }
+    #primary-menu .submenu-btn {
+        left: 0;
+        right: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    #primary-menu .submenu-btn {
+        right: auto;
+        left: 0;
+    }
+}

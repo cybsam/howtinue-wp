@@ -33,6 +33,16 @@ body {
   background-color: #1f1f1f;
   color: #a6a6a6; }
 
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+}
+  
+::selection {
+    color: red;
+    background: yellow;
+}
+
 h1,
 h2,
 h3,
