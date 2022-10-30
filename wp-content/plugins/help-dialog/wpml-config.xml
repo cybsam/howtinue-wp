@@ -1,0 +1,9 @@
+<wpml-config>
+	<admin-texts>
+        <key name="ephd_designs_config">
+            <key name="1">
+				<key name="faqs_top_tab"></key>
+			</key>
+        </key>
+    </admin-texts>
+</wpml-config>

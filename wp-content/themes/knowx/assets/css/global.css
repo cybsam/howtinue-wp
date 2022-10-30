@@ -56,7 +56,15 @@
     overflow: hidden;
     word-wrap: normal !important;
 }
-
+::-moz-selection { /* Code for Firefox */
+    color: rgb(0, 0, 0);
+    background: #fcb414;
+  }
+  
+  ::selection {
+    color: rgb(0, 0, 0);
+    background: #fcb414;
+  }
 .screen-reader-text:focus {
     background-color: #f1f1f1;
     border-radius: 3px;
